@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nes Homebrew - Play Super Mario Bros 3</title>
+  <style>
+    body {
+      background: #111;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #game {
+      width: 640px;
+      height: 480px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div id="game"></div>
+
+<script>
+  // REQUIRED EmulatorJS variables
+  EJS_player = "#game";
+  EJS_core = "nes"; // NES core
+  EJS_gameUrl = "https://maxvorster.github.io/maxproject/SuperMarioBros3.nes";
+  
+  // Path where the EmulatorJS "data" folder is located
+  EJS_pathtodata = "data/";
+</script>
+
+<!-- Load emulator -->
+<script src="data/loader.js"></script>
+
+</body>
+</html>
